@@ -18,5 +18,10 @@ pipeline {
                 sh 'echo echo \'Job Done!\''
             }
         }
+         stage("Get work dir") {
+            steps {
+                sh 'ls -a'
+            }
+        }
     }
 }
